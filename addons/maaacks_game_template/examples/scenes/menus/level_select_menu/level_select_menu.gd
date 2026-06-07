@@ -12,7 +12,7 @@ signal level_selected
 var level_paths : Array[String]
 
 func _ready() -> void:
-	add_levels_to_container()
+	call_deferred("add_levels_to_container")
 	
 ## A fresh level list is propgated into the ItemList, and the file names are cleaned
 func add_levels_to_container() -> void:
